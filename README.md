@@ -6,7 +6,7 @@ college program at the University of North Texas, planning to major in
 and science.
 
 ### What I'm working on
-- 🔭 Studying the foundations of X-ray astronomy under a faculty mentor at UNT
+- 🔭 Studied the foundations of X-ray astronomy under a faculty mentor at UNT
 - 💻 Building front-end projects with HTML, CSS, and JavaScript
 - 🐍 Strengthening my Python skills through coursework and projects
 - 📊 Beginning to explore machine learning and data science
