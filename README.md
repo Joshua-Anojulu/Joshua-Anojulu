@@ -6,23 +6,27 @@ I'm a student at the Texas Academy of Mathematics and Science (TAMS), an early-c
 
 - 🔭 Astronomy and machine learning, especially classifying sources in large sky surveys
 - 🧬 Computational biology and using data to study health and disease
+- 🌍 Remote sensing and applying deep learning to satellite imagery
 - 💻 Web development and front-end design
 - 📊 Data science and working with large, real-world datasets
 
 ### Highlights
 
 - 📄 Probability-calibration study of photometric classifiers on ~500K SDSS sources; paper in preparation for IEEE URTC
-- 🦠 Contributing to computational biology research on pathogen detection
-- 📈 Contributing to a project forecasting influenza season timing and severity from CDC data
+- 🌱 Built a ResNet50/EuroSAT land-cover classifier for deforestation detection on Sentinel-2 imagery, validated against Global Forest Watch
+- 🎓 Building EnsureCollege, a live web app that matches students to scholarships and summer programs with transparent fit scoring
+- 🦠 Exploring computational drug discovery through structure-based docking against a bacterial virulence target
 
 ### Featured projects
 
-- **[Scholarships4U](https://github.com/Joshua-Anojulu/scholarship-matcher)**: a full-stack web app that matches U.S. students to real national scholarships using a transparent scoring algorithm, with server-side LLM essay guidance and optional saved profiles. Built with FastAPI and a vanilla HTML/CSS/JS front end.
+- **[EnsureCollege](https://github.com/Joshua-Anojulu/ensure-college)** ([live site](https://ensurecollege.com/)): a full-stack web app that matches U.S. students to real national scholarships and elite summer programs using a transparent scoring algorithm, with source-linked requirements, saved application plans, deadline tracking, and AI-assisted essay guidance. Built with FastAPI and a vanilla HTML/CSS/JS front end.
+- **[sdss-photometric-calibration](https://github.com/Joshua-Anojulu/sdss-photometric-calibration)**: a study of how well photometric star/galaxy/quasar classifiers stay calibrated under magnitude shift on SDSS DR17. Includes the code, figures, and the IEEE URTC paper.
+- **[satellite-deforestation-classifier](https://github.com/Joshua-Anojulu/satellite-deforestation-classifier)**: a lightweight ResNet50/EuroSAT land-cover classifier applied to Sentinel-2 imagery for deforestation detection, validated against Global Forest Watch.
 - **[Stellar-Classifier](https://github.com/Joshua-Anojulu/Stellar-Classifier)**: a research-style study of how classical machine-learning models classify stars, galaxies, and quasars from SDSS photometry, and how reliable those classifications stay under feature leakage, noise, and missing features.
-- **[Demo-Day-Project](https://github.com/Joshua-Anojulu/Demo-Day-Project)**: a responsive, soccer-themed single-page site built with pure HTML, CSS, and JavaScript. [Live site](https://joshua-anojulu.github.io/Demo-Day-Project/).
+- **[Personal-Website](https://github.com/Joshua-Anojulu/Personal-Website)** ([live site](https://joshua-anojulu.github.io/Personal-Website/)): my portfolio, bringing together my research and web projects.
 
 ### Tools
 
-Python · scikit-learn · pandas · NumPy · matplotlib · FastAPI · JavaScript · HTML · CSS · Git · Linux
+Python · scikit-learn · PyTorch · pandas · NumPy · matplotlib · FastAPI · JavaScript · HTML · CSS · Git · Linux
 
 📫 **Reach me:** joshanojulu@gmail.com
