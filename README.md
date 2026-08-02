@@ -1,32 +1,34 @@
 # Hi, I'm Joshua 👋
 
-I'm a student at the Texas Academy of Mathematics and Science (TAMS), an early-college program at the University of North Texas, planning to major in computer science. I'm drawn to the intersection of computing and science, and I like building things that are useful and well-made.
+I'm a student at the Texas Academy of Mathematics and Science (TAMS), an early-college program at the University of North Texas, planning to major in computer science. I work where computing meets the physical sciences, and I build things that hold up when someone else runs them.
 
 ### Interests
 
 - 🔭 Astronomy and machine learning, especially classifying sources in large sky surveys
-- 🧬 Computational biology and using data to study health and disease
-- 🌍 Remote sensing and applying deep learning to satellite imagery
+- 🧬 Computational biology and structure-based drug discovery
+- 🌍 Remote sensing and deep learning on satellite imagery
 - 💻 Web development and front-end design
-- 📊 Data science and working with large, real-world datasets
+- 📊 Data science on large, real-world datasets
 
-### Highlights
+### Research
 
-- 📄 Probability-calibration study of photometric classifiers on ~500K SDSS sources; paper in preparation for IEEE URTC
-- 🌱 Built a ResNet50/EuroSAT land-cover classifier for deforestation detection on Sentinel-2 imagery, validated against Global Forest Watch
-- 🎓 Building EnsureCollege, a live web app that matches students to scholarships and summer programs with transparent fit scoring
-- 🦠 Exploring computational drug discovery through structure-based docking against a bacterial virulence target
+My research repositories stay private while the write-ups are in progress. What I've been working on:
+
+**Calibration of photometric classifiers (IEEE URTC, in submission).** I measured whether star/galaxy/quasar classifiers on ~500K SDSS DR17 sources produce probabilities you can trust, and whether that holds as sources get fainter. Random forests, gradient boosting, and MLPs stay well calibrated across the full magnitude range (ECE 0.003 to 0.005); logistic regression does not (ECE 0.077). The useful negative result: recalibration fit on bright sources transfers poorly to faint ones, and Platt scaling degrades worst. Temperature scaling is the safer choice.
+
+**Deforestation detection under domain shift.** A ResNet50 fine-tuned on EuroSAT Sentinel-2 imagery reaches 98% benchmark accuracy, then falls apart out of biome: F1 of 0.001 in the Congo Basin, on a composite my diagnostics show to be clean. A label-free AdaBN pass recovers it to 0.397. Benchmark accuracy does not transfer for free, and across biomes robustness beats peak in-biome F1.
+
+**Anti-virulence drug discovery.** Structure-based docking against a bacterial virulence target. The screen returned a null result, so I'm reframing the work as a benchmark study of the docking pipeline itself.
 
 ### Featured projects
 
-- **[EnsureCollege](https://github.com/Joshua-Anojulu/ensure-college)** ([live site](https://ensurecollege.com/)): a full-stack web app that matches U.S. students to real national scholarships and elite summer programs using a transparent scoring algorithm, with source-linked requirements, saved application plans, deadline tracking, and AI-assisted essay guidance. Built with FastAPI and a vanilla HTML/CSS/JS front end.
-- **[sdss-photometric-calibration](https://github.com/Joshua-Anojulu/sdss-photometric-calibration)**: a study of how well photometric star/galaxy/quasar classifiers stay calibrated under magnitude shift on SDSS DR17. Includes the code, figures, and the IEEE URTC paper.
-- **[satellite-deforestation-classifier](https://github.com/Joshua-Anojulu/satellite-deforestation-classifier)**: a lightweight ResNet50/EuroSAT land-cover classifier applied to Sentinel-2 imagery for deforestation detection, validated against Global Forest Watch.
-- **[Stellar-Classifier](https://github.com/Joshua-Anojulu/Stellar-Classifier)**: a research-style study of how classical machine-learning models classify stars, galaxies, and quasars from SDSS photometry, and how reliable those classifications stay under feature leakage, noise, and missing features.
-- **[Personal-Website](https://github.com/Joshua-Anojulu/Personal-Website)** ([live site](https://joshua-anojulu.github.io/Personal-Website/)): my portfolio, bringing together my research and web projects.
+- **[localflow](https://github.com/Joshua-Anojulu/localflow)**: local-first, system-wide dictation for Windows 11. Hold Left Ctrl, transcribe with faster-whisper large-v3-turbo on your own GPU, paste into whatever app has focus. No cloud, no quota, no audio leaving the machine.
+- **[plan-hardening](https://github.com/Joshua-Anojulu/plan-hardening)**: an adversarial plan-review harness. One model drafts an implementation plan, a second model attacks it in a read-only sandbox and returns a verdict, and the loop repeats until the plan survives or hits a round cap. Ships with reviewer adapters for several backends.
+- **[EnsureCollege](https://ensurecollege.com/)**: a live full-stack app that matches U.S. students to national scholarships and selective summer programs using a transparent scoring algorithm, with source-linked requirements, saved application plans, deadline tracking, and AI-assisted essay guidance. FastAPI backend, vanilla HTML/CSS/JS front end.
+- **[Personal-Website](https://joshua-anojulu.github.io/Personal-Website/)** ([source](https://github.com/Joshua-Anojulu/Personal-Website)): my portfolio, pulling the research and web projects together.
 
 ### Tools
 
-Python · scikit-learn · PyTorch · pandas · NumPy · matplotlib · FastAPI · JavaScript · HTML · CSS · Git · Linux
+Python · PyTorch · scikit-learn · pandas · NumPy · matplotlib · pytest · FastAPI · TypeScript · Next.js · JavaScript · HTML · CSS · Git · Linux
 
 📫 **Reach me:** joshanojulu@gmail.com
